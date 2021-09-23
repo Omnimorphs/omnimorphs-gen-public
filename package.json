@@ -1,0 +1,17 @@
+{
+  "name": "omnimorphs-gen-public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "node scripts/gen.js",
+    "hash": "node scripts/hash.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.9.1",
+    "fs-extra": "^10.0.0",
+    "seedrandom": "^3.0.5"
+  }
+}
