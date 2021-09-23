@@ -96,7 +96,7 @@ const main = () => {
     // writing metadata to disk
     fs.writeFileSync(path.join(outputPath, `${tokenIndex}.json`), JSON.stringify(metadata, null, 2));
 
-    if (!onlyMeta && tokenTraits.background_symbol?.name === 'diagonal_square_concentric') {
+    if (!onlyMeta) {
       // creating the token image with imagemagick
       const imagePathsCommand = imagePaths.map((imagePath, index) => {
         const finalPath = `./sources/${imagePath}`;
